@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: org.apache.kylin.jdbc.Driver
+    url: jdbc:kylin://10.1.2.113:17072/test_project
+    username: XXX
+    password: XXX
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 2
+      min-idle: 2
+      max-active: 5
+      validation-query: select 1
+      test-while-idle: true
+      test-on-borrow: true
+      test-on-return: false
+      max-wait: 6000
+      filter: slf4j
+
+
+server.port:
+  9090
+
+kylin.query.sql:
+  select 1,1,1
